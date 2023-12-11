@@ -1,0 +1,82 @@
+*{
+    padding: 0;margin: 0;
+}
+
+body{
+    background-color: violet;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    max-width: 70vw;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(238, 255, 0);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    height: 30vw;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2%;
+    margin: 20px auto;
+}
+
+.box-btn{
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 0, 0.612);
+    color: rgb(5, 5, 27);
+}
+
+#reset , #new-game{
+    display: block;
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: orange;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+    color: black;
+    border: none;
+    transition: background-color 0.3s,color 0.3s;
+    font-weight: bolder;
+}
+
+#reset:hover {
+    background-color:transparent;
+    color: rgb(74, 62, 62);
+}
+#info{
+    text-align: center;
+    color: white;
+}
+.win{
+    background-color: green;
+    transition: background-color 0.2s;
+}
+
+@media  screen and (max-width:570px) {
+    .box-btn{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
