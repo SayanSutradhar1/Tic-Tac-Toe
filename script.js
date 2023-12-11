@@ -43,7 +43,7 @@ const checkWinner = () =>{
 
 
 boxBtns.forEach(button =>{
-    let status = checkWinner();
+    
     button.addEventListener('click',()=>{
         changeTone.play()
         if(turnX){
@@ -57,6 +57,7 @@ boxBtns.forEach(button =>{
             info.innerText = 'Turn For X'
         }
         button.disabled = true
+        let status = checkWinner();
         if(status!=undefined){
             boxBtns.forEach(button=>{
                 button.disabled = true
