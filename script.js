@@ -19,7 +19,6 @@ const winPattern =[
 
 
 const checkWinner = () =>{
-    let count = 0
     for(let patterns of winPattern){
         let pos1 = boxBtns[patterns[0]]
         let pos2 = boxBtns[patterns[1]]
@@ -43,7 +42,6 @@ const checkWinner = () =>{
 
 
 boxBtns.forEach(button =>{
-    
     button.addEventListener('click',()=>{
         changeTone.play()
         if(turnX){
